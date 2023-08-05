@@ -1,0 +1,14 @@
+- Design Pattern.
+- Design Pattern:
+	- Creational patterns, 
+	- Structural patterns,
+	- Behavioral patterns.
+- MVC is is not a design pattern itself, it's a way to architecture your code in 3 layers using severals design pattern that you mention. All the framework that implements MVC behind the scene use the concept of Observable, Strategy and composite pattern.
+
+- As per the design pattern reference book Design Patterns - Elements of Reusable Object-Oriented Software , there are 23 design patterns which can be classified in three categories: Creational, Structural and Behavioral patterns. We'll also discuss another category of design pattern: J2EE design patterns.
+
+-  MVT is a design pattern or design architecture that Django follows to develop web applications.
+
+- Node use MVC.
+
+# Reference: https://www.tutorialspoint.com/design_pattern/design_pattern_overview.htm

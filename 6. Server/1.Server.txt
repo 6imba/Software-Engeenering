@@ -1,0 +1,71 @@
+1. Data| Database | DataCenter
+2. Server(it can be a program, software, dedicated_software, a_specialized_hardware for special purspose)
+3. Variety of server with respective purpose: Storage_Server, Database_Server, File_Server, Communicaton_Server, Application_Server, Local Server vs Delicated Server, Web hosting server etc
+4. Designat ing a computer as "server-class hardware" implies that it is specialized for running servers on it.
+5. Server maintain, host, handles and serve the resources(data) stored some kinf of storage_system(Database |DataCenter| LocalComputer) to all around the request on network.
+6. Specialized hardware on which a special_program(os,software) is run, and later that harware serves the resources around network on request.
+7. Server is the dedicated_main_computer on a network that fulfills/response the request of other computers over a same network.
+
+8. Services of Servers:(Storages, Backup, Security)
+
+9. Types of server acoording to services it provides: 
+(
+File_Server(ftp protocel), 
+Application_Server,
+Mail_Server(stmp protocel),
+Web_Hosting_Server(http protocel), host websites
+Database_Server(backend&frontend using queries),
+DNS server,
+)
+
+10. Client(request) <--> Server(response)
+
+11. Disadvantages of server: 
+(
+* if server fails all network(other_computer_linked_with_server will also fail),
+* expensive,
+)
+
+
+11. Server: Powerfull Dediacted Computer, Main Computer on a network, Dedicated Software, Program, Work Stations, Centralized Machine, Centralized Computer.
+
+12. Server is a centralized machine where multiple clients over the internet or in a LAN gets connected for special services.
+
+13. Big Organization: (Different server for different services. because many request needed to be handled)
+14. Small Organization: (Single server for  different services. because few are request needed to be handled)
+
+15. Server is not just a physical computer. A server is actually a role that a computer takes, because any ordinary desktop_computer,device,hardware can be set up as a server and its not compulsary to be powerful.
+e.g: you can setup a network in your home and ser your laptop,desktop,mobile as a server(file_server, web_server) with proper software and share files, hosted_website to the compters connected to your setted_computer_network. But as our laptop and desktop is not design for server putposese so it might not function well when request from client computer exceeds its limit.
+
+16. Client and Server both are a piece of computer hardware or software, where client request for resources and server response to the request of a client.
+    Server is a computer that provides services.
+    Client gets connected to server either wired or wirelessly.
+
+17. Processor for desktop: Intel core i7,
+18. Processor for server: Intel XEON, (ECC RAM), higher cache memory, higer core count, 
+
+
+19.  Hardware Component of a server: Processor(CPU), Main_Memory(RAM), Internal_Storage(HardDrive), Network Interface Controller(NIC), Peripheral_Devices.
+     High load to a server(more request) leads to server down.
+
+20.  Server Can host different Operating System: LINUX, Microsoft Window Server, MacOS server, FreeBSD, Android.
+
+21. Many server of goggle in many places.
+
+22. CISCO offers two types of servers: CISCO UCS-C Series & CISCO UCS-B Series.
+
+23. Browser_Request -> Internet -> Server -> Data_Center (<-Response)
+
+#Network topology architecture.
+
+
+
+
+
+
+
+
+
+
+
+

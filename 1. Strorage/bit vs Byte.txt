@@ -1,0 +1,1 @@
+- 8 bits are needed to encode a single character of text.

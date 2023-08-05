@@ -1,0 +1,2 @@
+md hello
+mkdir bolo

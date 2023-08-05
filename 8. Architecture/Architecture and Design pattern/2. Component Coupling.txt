@@ -1,0 +1,7 @@
+# Component coupling:
+    - Loose coupling and tight coupling are terms used to describe the degree of interdependence and dependency between software components or modules within a system.
+    - degree ~ level ~ extent ~ intensity
+
+# Loose coupling
+# Tight coupling
+# Decoupling

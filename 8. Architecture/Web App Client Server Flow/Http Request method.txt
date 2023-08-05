@@ -1,0 +1,13 @@
+# HTTP request package:
+    - has three part: Request Line, Headers, Body.
+        - Request Line: request_method, end_points
+        - Headers: extra info of browser and authenticated user like: browser-name, request-content-type, browser-language, cookie-info, 
+        - Body: actual request data thats needed to be processed like: username, email, password.
+            * body data is not visible directly but are visible if you check in your browser package.
+
+# HTTP request type: HTTP request type differs from method being use to send request.
+    - get ==> request(download) data/resources(html, css, image, js) from server into client-side : methods send data into url parameters, data is visible in url.
+    - post ==> submit data from client-side(form) into server. : method sends data into body, data is hidden in body.
+    - put ==> replace data, submit data from client-side(form) into server. and replace data.
+    - delete ==> delete data
+    - patch ==> partially modifies data

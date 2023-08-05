@@ -1,0 +1,45 @@
+- Authentication is the process of verifying the identity of the users.
+- Authentication is the process of verifying the identity of the users that request access to a system, network, or device.
+- Authentication is the process of verifying the identity of the users that request access to a system, network, or device on the basis of provided credentials compared to those records of authorised users stored in database of the system.
+
+- Authoriztion in other hand is the process of verifying permissions of particular authenticated user.
+
+- Authentication: verifying the identity
+- Authoriztion: verifying permissions
+
+- Authentication and Authorization determines HTTP response status code.
+    - Authentication(401 Unauthorized)
+    - Authorization(403 Forbidden)
+
+- Forexample:
+    * Entering a username and password when you log in to a website.
+    * Finger print to unlock modile.
+
+- There exist main 3 process|method of Authentication.
+    1. Password-based authentication. (most common methods) ==> something you know
+    2. Token-based authentication. (such as bank card, jwt) ==> something you have
+    3. Biometric authentication. (such as fingerprints, voice recognition) ==> something you are
+
+***********************************************************
+Question:
+
+    - JWT is a token based stateless authentication mechanism.
+
+    - Authentication Types:
+        Password-based authentication.
+        Multi-factor authentication.
+        Certificate-based authentication.
+        Biometric authentication.
+        Token-based authentication.
+        Session-based authentication.
+        OAAUTH
+        Adaptive Authentication.
+        Two-factor authentication (2FA)
+        one-time pins,
+
+    - Swagger tools
+--------------------------------------------------------------------------------
+- Stateful Authentication(session using a cookie)
+- Stateless Authentication(token using JWT/OAuth/other)
+- https://www.youtube.com/watch?v=2PPSXonhIck
+- https://www.sailpoint.com/identity-library/difference-between-authentication-and-authorization/#:~:text=Simply%20put%2C%20authentication%20is%20the,a%20user%20has%20access%20to.&text=Authentication%20is%20used%20to%20verify,they%20represent%20themselves%20to%20be.

@@ -1,0 +1,27 @@
+# User Authentication:
+
+- There are main two ways to get job done: Sessions_based_auth(cookie_id) and Tokens_based_auth.
+
+# Cookie Based Authentication Server Side Session:
+	* Traditional Approach on web.
+	1. User submit login-form to server, ---- HTTP ---->
+	2. Server store a session ==> server validates the login-credentials and create a session in Database then response with the sessionID.
+	3. Then the responded sessionID is stored in browser cookies,(cookie: place in browser to save likely key-value pair)
+	4. Cookie along with sessionID is sent back to server for every subsequent http_request to the server.
+	- Therefore stateful session between client and server is maintained.
+	- Problems:
+		* CRSF/cors(phishing of session id in cookie)
+		* Store sessionID on server, As most of the cloud application is scaled horizontally, this can cause a huge bottle neck in production.(no goo fro distributed system)
+		* So token based authentication solves this problem but introduces its own set of challenges.
+
+# Token Based Authentication:
+	1. User submit login-form to server, ---- HTTP ---->
+	2. Instead of storing sessionID on server, it generates JWT(JSON Web Token). The JWT is created with private-key on the server.(JWT s the json storing all user data but presented in token formate)
+	3. Then the responded with JWT is send to browser and store in web_storage/Authorization_header.
+	4. In further request JWT will be added to the Authorization header with bearer,
+	5. Then server just needs to validate the signature. (no need of database lookup, more efficient when dealing with distributed system in cloud),
+	- JWT ==> header.payload.signature
+
+- With Session, Authentication is handle/saved user data on server-side.
+- With Token, Authentication is managed/saved user data on client-side.
+

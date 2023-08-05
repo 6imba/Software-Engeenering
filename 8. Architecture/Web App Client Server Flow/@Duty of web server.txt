@@ -1,0 +1,8 @@
+- host webpage/website/webapp.
+- handle http request to webapp hosted on server.
+
+- like apache_web_server for php, IIS_web_server for ASP.net. Here php and .net uses third party application(apache, IIS) to create web server.
+- but when working with node.js we don't need third party application, we can create our own Node.js web server.
+- which handles http request asynchronously.
+
+- 

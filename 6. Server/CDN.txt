@@ -1,0 +1,24 @@
+# Content Delivery Network.
+    - Content Delivery Network Service.
+    - CDN is a service that accelarates internet Content Delivery.
+    - CDN makes website faster.
+
+# Pors:
+    - Uptime (Speed)
+    - Load (Traffic on main server)
+    - Security of server attack
+
+# Features:
+    - Caching data,
+    - Customization data according to device type and location.,
+    - 
+
+Q. CDN vs Local
+Q. Client location and Server location || Distance || time. && Request/Response && Website Speed.
+Q. Speed,Storage,Electricity,Efficient ~ Time,Space,Power,Quality are base on Distance,Avialibility.
+- Latency, Cost, Load.
+
+
+# Reference:
+    - https://www.youtube.com/watch?v=8zX0rue2Hic&ab_channel=GauravSen
+    - 

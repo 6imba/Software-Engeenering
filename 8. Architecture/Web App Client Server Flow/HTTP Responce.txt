@@ -1,0 +1,8 @@
+# HTTP response package:
+    - has three part: Status Line, Headers, Body.
+        - Status Line: status_code, status text.
+        - Headers: extra info of server and contecnt type like: server-name: express or django, response-content-type, response-content-length, response-content-expiry-date
+        - Body: actual response data that client requested like: whole-html-code, json-data, js, img, css etc.
+            * body data is not visible directly but are visible if you check in your browser package.
+
+# Http response status serries : 2XX, 3XX, 4XX etc for respective message.

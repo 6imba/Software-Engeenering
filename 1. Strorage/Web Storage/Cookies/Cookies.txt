@@ -1,0 +1,43 @@
+
+- How do we make server remember or trace a visitor.
+
+- we can set cookies in express without any other extra packages dependencies.(server1.js)
+- but if you want to read the incomming cookies being sent from the browser, you do need to install apackage.
+    - i.e cookies-parser
+    - npm i cookie-parser
+    (server2.js)
+
+- this is when cookies are useful as:
+    - you can set them once,
+    - then browser will automatically sends those setted cookies to the server-side along with each and every http request, regardless of http request methods.
+
+- here we have access the cookie from server-side.
+- also we can access the cookie from clinet-side in browser.
+    - go to console of browser and code js: document.cookie ==> you will get cookie data.
+        - document.cookie
+        - 'name=Amir; age=22; species=being a human'
+
+- In certain extend its good to allow client to access cookie until you are not storing some private or security related data.
+- but you can disable client side javascript access.
+
+
+- Once you set the cookie you can access cookie data through all tab of browser, till the browser page lies in same domain(localhost:, abc.com:, etc) irrespective to port number.
+
+
+Before going more in crsf you should know about CRSF:
+# biggest security exploit/valuranity related to cookiee:
+    - CSRF: Cross site request forgery.
+    - csurf
+    - 
+
+
+
+*************************************************************************************************************************
+server1.js ==> Create cookies in client-side from server-side using express.
+server2.js ==> Retrive the incoming cookies in sever-side. (read cookies passed-along-with-http_request-from-client_side)
+server3.js ==>  Configuration while creating cookie.
+server4.js ==>  CSRF
+
+*************************************************************************************************************************
+
+# Reference: https://www.youtube.com/watch?v=uXDnS5PcjCA

@@ -1,0 +1,23 @@
+# Web App Architecture:
+    - client fill form
+    - send data to server
+    - send/requested data into server where data process is done by web-server-framework (over server-side)
+    - some of web-server-framework: node.js + ExpressJs, python + Django, python + Flask, php + Laravel, php + Drupel. etc
+    - express.js is a framework above node.js, that provides library to node in oder to exchange of data from client and server.
+
+# Some of concept of Web App Client and Server Architecture:
+    - request: data send from client to server is called as request.
+    - response: data send from server to client after process to corresponding request is called as response.
+
+# To request one single file there might be many request send to server and respective response.
+
+# Web Server Port;
+
+# express server:
+    - url: hamrofutsal.com/home
+    - url: server_domain + endpoint_path ==> hamrofutsal.com + /home =>  hamrofutsal.com/home
+
+# End point vs API vs URL:
+    - url to webapp.
+    - url to api.
+    - api endpoint or url endpoint

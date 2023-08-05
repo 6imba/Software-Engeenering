@@ -1,0 +1,17 @@
+- Stream: Khola(fast moving bodies of water)
+- a river is called a River because it is larger, deeper, and longer than a stream, as for a stream it is much than a river not as deep, some you can even walk across. Another difference is that a stream is a small flowing water.
+
+# streaming:
+	- a method of transmitting or receiving data (especially video and audio material) over a computer network as a steady, continuous flow, allowing playback to start while the rest of the data is still being received.
+	- method of transfering/delivering data from sources to destination is call streaming.
+	- here buffering doesnt comes in middle.
+	- flowing/moving/transfering in contineous/together/sequencial way.
+
+# downloading vs buffering vs streaming .
+
+# In short if you have better broadband speed and have plans to watch video again and again its better to download it.
+
+# Buffering is the practice of pre-loading segments of data when streaming video content. Streaming — the continuous transmission of audio or video files from a server to a client — is the process that makes watching videos online possible.
+
+- segment: each of the parts into which something is or may be divided.
+- segment vs package

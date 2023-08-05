@@ -1,0 +1,86 @@
+# What is software architecture?
+    - structure of s/w systems.
+# What defines the architecture of a software?
+    - blueprint of software structure, organization and interaction of/between components, of a software.
+
+# Therefore software architecture is way components of a system/software is structured for solving a specific problem.
+
+# What is software architecture pattern?
+    - A software architecture pattern, also known as an architectural pattern or design pattern, is a general, reusable solution to a common software design problem.
+    - There various software architecture pattern to solve a specific problem.
+
+# When classifying software architecture pattern/types, various factors/purposes/criterias/requirements should be considered:
+    - Functional or Business Domain
+    - System Scalability
+    - Performance
+    - Security and Privacy
+    - Deployment Environment
+    - Data Management
+    - Communication and Integration
+    - Quality Attributes
+
+# Various software architecture pattern:
+    - Microservices
+    - Service-oriented architecture
+    - Event-driven architecture
+    - Model–view–controller
+    - Object-oriented programming
+    - Server
+    - Component-based software engineering
+    - Peer-to-peer
+    - Client–server model
+    - Layered (N-tier) architecture
+    - Event-driven programming
+    - Three-tier architecture
+    - Application Architecture
+    - Multitier architecture
+    - Microkernel Pattern
+
+# Microservices Architecture(based on the principle of building a software system): This pattern decomposes the system into small, independent services that can be developed, deployed, and scaled independently. It promotes flexibility, scalability, and allows for easier maintenance of complex systems.
+
+# Event-Driven Architecture: This pattern focuses on the flow of events and messages between components. Components can publish and subscribe to events, allowing for loose coupling and asynchronous communication.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+### Different software architecture on the basis of various factor:
+
+Certainly! Software architectures can vary based on several factors or criteria. Here are some different software architectures based on various factors:
+
+Monolithic Architecture vs. Microservices Architecture:
+
+Factor: System Scale, Modularity, Deployment.
+Description: Monolithic architecture involves building an application as a single, self-contained unit, whereas microservices architecture breaks it down into small, independently deployable services.
+Client-Server Architecture vs. Peer-to-Peer Architecture:
+
+Factor: Communication and Interaction Model.
+Description: Client-server architecture involves a central server that provides services to multiple client systems, while peer-to-peer architecture enables direct communication and resource sharing between individual nodes.
+Layered Architecture:
+
+Factor: Separation of Concerns.
+Description: Layered architecture separates the system into distinct layers, such as presentation, business logic, and data access, to achieve modular design and ease of maintenance.
+Event-Driven Architecture:
+
+Factor: Communication and System Behavior.
+Description: Event-driven architecture focuses on the flow of events and messages, where components react to events and trigger actions, allowing loose coupling and scalability.
+Service-Oriented Architecture (SOA):
+
+Factor: Modularity, Integration.
+Description: SOA involves building a system as a collection of loosely coupled services that communicate with each other via standardized interfaces, promoting reusability and interoperability.
+Big Data Architecture:
+
+Factor: Handling Large Volumes of Data.
+Description: Big data architecture addresses the challenges of processing and analyzing massive volumes of data, often utilizing distributed computing, parallel processing, and specialized frameworks like Hadoop or Spark.
+Cloud-native Architecture:
+
+Factor: Deployment Environment, Scalability.
+Description: Cloud-native architecture leverages cloud computing principles and services, allowing applications to be developed, deployed, and scaled dynamically in cloud environments.
+Event Sourcing and CQRS:
+
+Factor: Data Management, Scalability.
+Description: Event sourcing captures all changes to the system's state as a sequence of events, while Command Query Responsibility Segregation (CQRS) separates read and write operations, improving scalability and performance.
+These are just a few examples of different software architectures based on different factors or criteria. The choice of architecture depends on the specific requirements, constraints, and goals of the system being developed. Architects consider these factors to select the most suitable architecture that meets the system's needs.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+

@@ -1,0 +1,14 @@
+- Hosting.
+- Filezilla
+- https://www.youtube.com/watch?v=6f-HzlGGGw0.
+- Domain & Hosting.
+
+- XAMPP is the perfect tool to Setup web server locally.
+
+# Start running server in different server side language:
+  1. PHP: Start Apache server in XAMPP.
+  2. Python(Django): python manage.py runserver.
+  3. NodeJS(Express.JS): node appServer.js.
+  - what is window localhost.
+
+# 

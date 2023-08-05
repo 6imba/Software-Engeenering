@@ -1,0 +1,49 @@
+# buffer: storage
+	- receive dta --> process the receive data,
+	- but what if the rate of data being received is higher than rate of data processing,
+	- so here come the use of buffer that stores the received data for futher processing
+	- data --> buffer(store) --> process
+	- youtube: red line processing vedio data && white light storing data in buffer(buffer data) for futher processing.
+	- red part: processed data
+	- white part: buffered data
+	- So when net speed is low, cirsuit cannot fetch required data at proper rate/time,
+	- when cannot fetch data then buffer gets empty,
+	- means cannot process the data in buffer.
+	- so vedio is loading, buffring.
+	- so buffer concept make you vedio experince good.
+	- buffereing has its own space-limit, rule.
+	- data transfer from one sources to another destination source either in bit,byte,kilobyte,etc form in respective form as per the speed of system.
+	- Source -> Buffer Memory -> Destination(Main Memory)
+
+# I/O bufferring
+	- buffering is used to match the speed gap between of various /O devices and CPU.
+>>>
+- zero capacity ... bounded capacity ... unbounded capacity
+
+
+
+
+
+
+
+# processor: Hz(MHz,GHz), core, bit, architecture, design,
+	- processor: does calculation ==> (CPU,GPU,)
+	- Hz: clock speed.
+		- speed/rate of changing/switching of signal(on/off, 1/0, high/low) in circuit.
+
+	- CPUs will perform most basic arithmetic, logic and I/O operations, as well as allocate commands for other chips and components running in a computer. The term processor is used interchangeably with the term central processing unit (CPU), although strictly speaking, the CPU is not the only processor in a computer.
+
+	- While individual CPU cores are faster (as measured by CPU clock speed) and smarter than individual GPU cores (as measured by available instruction sets),
+
+# Type of processor: 
+
+- circuit: a roughly circular line, route, or movement that starts and finishes at the same place.
+- electronic circuit: An electronic circuit is composed of individual electronic components, such as resistors, transistors, capacitors, inductors and diodes, connected by conductive wires or traces through which electric current can flow.
+- integrated circuit: an electronic circuit formed on a small piece of semiconducting material, which performs the same function as a larger circuit made from discrete components.
+
+- Conducting materials are good conductors of electricity.
+- A semiconductor is a material product usually comprised of silicon, which conducts electricity more than an insulator, such as glass, but less than a pure conductor, such as copper or aluminum.
+
+# https://www.youtube.com/watch?v=-RcruD9TH2M
+
+# 

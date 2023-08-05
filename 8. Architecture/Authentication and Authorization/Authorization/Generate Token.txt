@@ -1,0 +1,134 @@
+- get form password and comfirm_password && check if they match.
+- if yes then, generate token.
+- then concatinate the generated token into tokens_array field as object.
+- then hash password if user created for the first time before saving.
+- finally save user, token hash password into MongoDB.
+- return generated token so taht, cookies can be created in browser with this sessionID/token.
+- render dashboard
+
+
+
+
+
+-----------------------------------------------------------------------------------------
+
+- In appRoute.js:
+
+    1. const UserModelCollectionClass = require("../models/userSchema");
+
+    2. router.post("/register", logAuth, async (req, res) => {
+        - if (password === confirmPassword) {
+        - const registerUserObj = new UserModelCollectionClass({ fields});
+        - const tokenCreated = await registerUserObj.generateToken();
+
+            - In userSchema.js:
+
+                - generateToken() instance methods to generate tokens:
+                    3. userSchemaObj.methods.generateToken = async function () {
+                            - const tokenCreated = await jwt.sign( { _id: this._id.toString() }, process.env.SECRET_KEY); // generate new token.
+                            - this.tokens = this.tokens.concat({ token: tokenCreated }); // concatinate new token to the user token property.
+                            4. hash password as we havepre save
+
+                            - 4. .pre() built-in middleware, runs before .save() ==> hash password:
+                                    userSchemaObj.pre("save", async function (next) {
+                                        - if (this.isModified("password")) { // check if this user is created first time or just j=token is needed to generated for existing user.
+                                            - this.password = await bcrypt.hash(this.password, 10); // hash password
+                                            next();
+                                        }
+                                    });
+
+                            - await this.save(); // save concatinated new token into MongoDB.
+                            - return tokenCreated; // return generated new token so that can be used to create cookie.
+                        }
+
+        - res.status(201).redirect("dashboard");
+--------------------------------------------------------------
+
+ - In userSchema.js:
+
+// (generateToken as middleware) to generate tokens
+userSchemaObj.methods.generateToken = async function () {
+  try {
+    // console.log(this._id);
+    const tokenCreated = await jwt.sign(
+      { _id: this._id.toString() },
+      process.env.SECRET_KEY
+    ); // this means fetchedUserDocument
+    // console.log('1 ', this)
+    this.tokens = this.tokens.concat({ token: tokenCreated });
+    // console.log('2', this)
+    await this.save();
+    return tokenCreated;
+  } catch (error) {
+    // res.send("Error:", error);
+    console.log("Error:", error);
+  }
+};
+
+// (pre as middleware) to hash password
+userSchemaObj.pre("save", async function (next) {
+  if (this.isModified("password")) {
+    this.password = await bcrypt.hash(this.password, 10);
+    next();
+  }
+});
+
+
+
+
+- In appRoute.js:
+  .post(logAuth, async (req, res) => {
+    try {
+      const password = req.body.password;
+      const confirmPassword = req.body.cpassword;
+      if (password === confirmPassword) {
+        const registerUserObj = new UserModelCollectionClass({
+          username: req.body.username,
+          mobile: req.body.mobile,
+          email: req.body.email,
+          address: req.body.address,
+          password: req.body.password,
+          role: "customer",
+        });
+
+        // midddleware to generate token.
+        const tokenCreated = await registerUserObj.generateToken();
+        // store token in cookies.
+        res.cookie("myJwt", tokenCreated, {
+          expires: new Date(Date.now() + 60000),
+          httpOnly: true,
+        });
+
+        // pre midddleware to hashpassword in userSchema.js
+        // console.log("Before pre save")
+
+        // const newUserRegistered = await registerUserObj.save();
+        // console.log(newUserRegistered)
+        res.status(201).redirect("dashboard");
+      } else {
+        res.send("Password and Confirm Password doesn't match !");
+      }
+    } catch (error) {
+      console.log("Error: ", error);
+      res.status(400).send(error);
+    }
+  });
+*****************************************************************************************************
+* const jwt = require("jsonwebtoken");
+  - jwt.sign()
+  - jwt.verify()
+
+  - jwt.sign({ _id: this._id.toString() }, process.env.SECRET_KEY)
+  - jwt.verify(req.cookies.myJwt, process.env.SECRET_KEY)
+
+* logging user in --> authentication.
+* jwt is used for authorization not authentication. --> make sure if the user sending request to server is the same user that acually logged in during authentication process.
+* jwt authorizes if this authenticated user has access to this system.
+* and normally this is done using session|sessionID.
+  - you have a sessionID and sent it to cookies of browser.
+  - and every time client makes a request they send that sessionID(present-in-browser-cookie) up to the server
+  - then server checks if the sessionID(of-user-who-requested) exist in menory|DB.
+  - server find the user and gives the user authorization to access respective endpoints.
+* In case of jwt it uses token(JSON wen token) as an sessionID, to do authorization.
+
+

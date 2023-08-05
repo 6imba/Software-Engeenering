@@ -1,0 +1,72 @@
+- HTTP protocol
+- Different types of HTTP: request methods, resposne, status-code. etc.
+- Node.js & Express.js
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- Hyper Text Transfer Protocol.
+- HTTP is protocol responsible for communication between web client and server.
+- HTTP is stateless TCP/IP based communication protocol responsible for communication between web client and server.
+	- i.e: when you visit a webpage, submit form, click button to send some ajax request, click button to send some fetch request. You are using http for response/request cycle.(Request and response has header and body)
+- HTTP is stateless:  Means every request is compeletely independent.
+- How can we maintain state of HTTP: Local Storage, Cookies, Sessions, etc...
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- HTTPS: Hyper Text Transfer Protocol Secure.
+	- Data sent back and forth is encrypted by something called SSL/TLS.
+	- anytime user is sending some sensetive information you should always be on https.(i.e credit card data, contact form, )
+	- Many websites and application nowadays are forcing https in every page, which can be done by installing certificate(SSL certificate) in web host.
+	- and there are different level of security and certificate.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- HTTP request methods:
+	- when a request is made to a server, it has some kind of method attached to it: GET, POST, PUT, PATCH, DELETE.
+		- GET: Loading html page, Loading assets(css, images, json-data, xml-data ), so on... -> Every time you visit a webpage you are making GET request to the server via HTTP. -> sent data is visible in url. -> search filter data.
+		- POST: Posting/Adding data/resources to the server.
+		- PUT: Update entire existing data/resource on the server database. (Entire data)
+		- PATCH: Partial Update existing data on the server database. (Partial data)
+		- DELETE: Delete existing data on the server database.
+
+		POST – Create
+		GET – Read/Retrieve
+		PUT/PATCH – Update
+		DELETE – Delete
+
+- Put vs patch && Put vs Post.	
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- Each HTTP request & response has header, body.
+
+- HTTP request:
+	- Header:
+	- Body: Form filled data,
+
+- HTTP resposne:
+	- Header:
+	- Body: data responseded by server: html-page, json-data.
+
+- HTTP Header: Its divided into three parts(method/path/protocol) +different header fields.
+	- HTTP Request Header: 
+	- HTTP ResponseHeader:
+	- HTTP General Header:
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- HTTP status code: 1xx, 2xx, 3xx, 4xx, 5xx.
+	- 1xx: Informational ==> 
+	- 2xx: Success ==> 200-OK, 201-OK created
+	- 3xx: Redirect ==> 301-Moved to new url(redirection), 304-Not modified(Cached version)
+	- 4xx: Client Error ==> 400-Bad request, 401-Unauthorized, 404-Not found,
+	- 5xx: Server Error ==> 500-Internal server error.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- HTTP version: HTTP/1.1 Baseline && HTTP/12 Multiplexing
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- Content-Type:
+	- text/html; charset=utf-8 ==> html-page, text
+	- application/json; charset=utf-8 ==> json
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Reference:
+	https://www.youtube.com/watch?v=iYM2zFP3Zn0&list=RDCMUC29ju8bIPH5as8OGnQzwJyA&start_radio=1&rv=iYM2zFP3Zn0&t=23
+

@@ -1,0 +1,51 @@
+- World Wide Web, which is also known as a Web, is a collection of websites or web pages stored in web servers and connected to local computers through the internet.
+- Services delivered over the web is called web services.
+- There are two types of web services: SOAP Web Services. REST Web Services.
+- Web service supports XML while API supports XML and JSON.
+- All Web services are APIs but all APIs are not web services.
+
+- There is more than one way to answer, “What is a web service?” But, essentially, web services include any software, application, or cloud technology that provides standardized web protocols (HTTP or HTTPS) to interoperate, communicate, and exchange data messaging – usually XML (Extensible Markup Language) – throughout the internet.
+- There are a few central types of web services: XML-RPC, UDDI, SOAP, and REST:
+- Web service is a standardized medium to propagate communication between the client and server applications on the WWW (World Wide Web). 
+- Server hosting web service.
+- Web service: interaction between client application and web server.
+
+- API is used to make communication between two system.
+- Weather API, Payment Gateway, Air Flight API, Login with API, SMS API, Hotel Booking, so on.
+- Free API(Just hit end point) & Purchase API(Authentoicated & Authorized secrect-key) & Web Services (Authentication Credential)
+
+- A_system needs data of B_system.
+- Here, A_system directly doesnt inreact with database of B_system.
+- Therefore, B_system has API with created so that Thrid party can interract with certain data in their database.
+- So, A_system inreact with API of B_system , and then B_system_API interract with its databse.
+- Access API via endpoint(url).
+- Other system can access our API via endpoint(url) with unique_security-key provided to them, if API is not free.
+- API is utility developed by system for other system to interact with its database.
+- Every API has documentation.
+
+- Web Services makes interaction between two system.
+    - If you need service over the web using HTTP protocol, we mostly use Web Services.
+- API makes interaction between two system.
+    - If you want to make third party utility/dependency integration, you use API.
+- All Web Service are API but all API are not Web Service.
+- REST API is just one of the type of API. (other SOAP API)
+- SOAP API (XML)
+- REST API (Plain Text, JSON, HTML, so on)
+- REST: Representational State Transfer
+* API endpoint --> Authentication --> Authorization.
+
+- Is all service delivered over a network via HTTP Web Service? ==> No
+
+- Mricro Service:
+    - Solution to Monolithic Architecture.
+    - Break down large system into diferent small n number of component(microservices/module) and configure them.
+    - Dynamic scaling
+    - 
+
+- WebApp vs WebService vs API vs MicroSerivce.
+
+- Type of Web Service:
+    - SOAP
+    - REST
+
+- 

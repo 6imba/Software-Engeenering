@@ -1,0 +1,63 @@
+  <script>
+    try {
+      var user = '<%-JSON.stringify(a_user)%>';
+      console.log(user)
+      console.log(JSON.stringify(user))
+      localStorage.setItem('user', user);
+    } catch (error) {
+      console.log(error)
+    }
+  </script>
+
+
+  vs
+
+    <script>
+    try {
+      var user = '<%- a_user %>';
+      console.log(user)
+      console.log(JSON.stringify(user))
+      localStorage.setItem('user', JSON.stringify(a_user));
+    } catch (error) {
+      console.log(error)
+    }
+  </script>
+  -----------------------------------------------------------
+
+- In login controler:
+  - midddleware to generate token.
+  - store token in cookies.
+  -local storage user-detials
+    const userDetial = {username: fetchedUserDocument.username, mobile: fetchedUserDocument.mobile, email: fetchedUserDocument.email, address: fetchedUserDocument.address, datejoin: fetchedUserDocument.datejoin, role: fetchedUserDocument.role, token: tokenCreated};
+    res.redirect("/dashboard?userDetial=" + JSON.stringify(userDetial));
+
+- In dashboard controler:
+  if(req.query.userDetial){
+    var a_user = JSON.parse(req.query.userDetial);
+    params = {products: products, a_user: a_user}
+  }else{
+    params = {products: products}
+  }
+  res.render("dashboard", params);
+
+- In dashboard.ejs view:
+
+  <script>
+    console.log(localStorage.user)
+    if (localStorage.user == undefined) {
+      console.log("Create");
+      try {
+        var user = '<%- JSON.stringify(a_user) %>';
+        console.log(user)
+        console.log(JSON.stringify(user))
+        localStorage.setItem('user', user);
+      } catch (error) {
+        console.log(error)
+      }
+    }
+    else{
+      console.log("Dont Create");
+    }
+  </script>
+
+-----------------------------------------------------------

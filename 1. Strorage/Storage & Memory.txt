@@ -1,0 +1,50 @@
+- memory refers to the location of short-term data, storage is the component of your computer that allows you to store and access data on a long-term basis
+- Memory is volatile storage, which means that when you turn the computer off, the data disappears. For more information on what RAM does, read here. Storage (either a hard drive or a solid state drive) stores data long-term for permanent access.
+
+- Hard Drive Storage
+- RAM memory(Primary/Main memory)
+- CACHE memory
+- buffer memory
+- pendrive
+- CD/DVD
+- ROM
+- Virtual Memory(Virtual RAM)
+
+- data transfer from one sources to another destination source either in bit,byte,kilobyte,etc form in respective form as per the speed of system.
+- Source -> Buffer Memory -> Destination(Main Memory)
+
+
+
+# Cache:
+    - Caches, Cache_Memory, Caching
+
+    - Cache Data: A temporary file.
+    
+    # HardStorage>MainMemory>Cache ==> HardDisk>RAM>CacheMemory
+        - RAM(Dynamic) & CacheMemory(Static Ram)
+
+    - Cache: Mobile,Server,Browser,
+        - Cache on HardwareSide: Processors_Cache, GPU_Cache, HardDrive_Cache, SSDs_Cache, etc.
+        - Cache on SoftwareSide: OperatingSystem_Cache, Browser_Cache, DNS_Cache, Database_Cache, Server_Cache, etc. (Individual chaching for individual apps)
+        - Store data in Cache Memory So that we can retrive data quickly.
+
+# Memory Hirarchy,
+# Cache Space: Cache eviction Strategy.
+# Cache clearing.
+
+Q. Ok then wkt, when we open any app for the first time it does Cacheing for that app which takes certain memory. But what if we dont and memory avialable for chaching?
+
+Q. What is chaching?
+Q. What is Chache Memory?
+Q. Why is Chaching use?
+Q. What are the different levels of Chache Memory.
+Q. What is size of Caache?
+Q. What is Cache Hit?
+Q. What is Cache Miss?
+
+# Reference:
+    - https://www.youtube.com/watch?v=Zr8WKIOIKsk&ab_channel=ALLABOUTELECTRONICS
+    - 
+
+Q. Is Cache volatile or non-volatile?
+    - Volatile.

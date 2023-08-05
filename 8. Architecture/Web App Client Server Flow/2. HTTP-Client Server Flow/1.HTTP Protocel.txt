@@ -1,0 +1,50 @@
+- HTTP protocel
+- Handle http request/response cycle work flow.
+- HTTP request methods.
+- Different types of HTTP-response, status-code, etc.
+- Testing with node.js(language) + express.js(framework) + postman(http-client)
+
+- Hyper Text Transfer Protocel.
+- HTTP is protocel responsile for communication between web server and clients.
+- ajax request/ fetch request.
+
+- HTTP is stateless.
+- Every request is completely independant.
+- We can utilize programming, localStorage, Cookies, Session to kind of maintain state of HTTP request.
+
+- HTTP request methods: GET, POST, PUT, DELETE, patch
+
+https://www.youtube.com/watch?v=iYM2zFP3Zn0
+---------------------------------------------------------------------
+- HTTP is stateless protocol or keep no track of activity.
+- HTTP is called as a stateless protocol because each request is executed independently, without any knowledge of the requests that were executed before it.
+- which means once the transaction ends the connection between the browser and the server, no any identity of client request ia saved in server.
+
+- In order to make HTTP stateful , we use session management techniques.
+
+- Stateless and Stateful system.
+
+# If http protocol is stateless how does it manage the state?
+    - HTTP is a stateless (or non-persistent) protocol. Each request is treated by its own. A request will not know what was done in the previous requests. The protocol is designed to be stateless for simplicity. However, some Internet applications, such as e-commerce shopping cart, require the state information to be passed one request to the next. Since the protocol is stateless, it is the responsibility of the application to maintain state information within their application.
+    - A few techniques can be used to maintain state information across multiple HTTP requests, namely,
+        * Use POST/GET variables to pass info from page to page.
+        * Use the session to store information.
+        * Use cookies to store information.
+        * Hidden fields of the HTML form.
+        * URL rewriting.
+
+# Can HTTP manage states?
+    ==> HTTP does not manage state - an application on the web server does that.
+    ==> The server can send out a small cookie with the session ID encoded in it. The cookie is returned to the server on the next request and the decoded session ID allows the application to look up a larger record that holds the state of the session.
+
+    ==> Sessions are maintained automatically by a session cookie that is sent to the client when the session is first created.
+    ==> Whereas JWT is a token based stateless authentication mechanism.
+    ==> JWTs provide a means of maintaining session state on the client instead of doing it on the server.
+
+
+
+https://stackoverflow.com/questions/1675529/how-to-maintain-state-in-a-web-app-as-http-is-stateless
+https://www.quora.com/If-http-protocol-is-stateless-how-does-it-manage-the-state
+
+-------------------------------------------------------
+https://www.youtube.com/watch?v=iYM2zFP3Zn0

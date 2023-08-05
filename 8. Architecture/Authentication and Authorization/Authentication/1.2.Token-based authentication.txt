@@ -1,0 +1,14 @@
+2. Token-based authentication. (such as bank card, jwt) ==> something you have.
+
+    - Token is the cryptic string, that the server generates for the client in response to login request.
+    - Token must be passed along-with|inside HTTP-request-Header, when making request to the particular protected system.
+    - 
+
+
+- Some of sysnonoms:
+    - bearer: a person or thing that carries or holds something.
+
+
+# Authentication --> Authorization --> Access To Resources
+# Who is this user? --> # Do this authenticated user has permission  ---> to access this particular endpoint|resources.
+

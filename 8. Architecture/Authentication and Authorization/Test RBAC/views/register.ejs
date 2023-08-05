@@ -1,0 +1,26 @@
+<%- include('./partials_layout/header') %>
+
+    <h1>Register Page</h1>
+
+    <form action="/auth/register" method="POST">
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div>
+            <label for="c_password">Confirm Password:</label>
+            <input type="password" name="c_password" id="c_password">
+        </div>
+        <div>
+            <input type="submit" value="Register">
+        </div>
+    </form>
+    <div>
+        <p>Already have an account? <a href="/auth/login">Login</a> </p>
+    </div>
+
+<%- include('./partials_layout/footer') %>

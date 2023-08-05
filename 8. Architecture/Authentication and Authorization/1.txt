@@ -1,0 +1,2 @@
+- Client and Server Architecture: https://www.youtube.com/watch?v=sfMNI0yLZII
+- HTTP Response Status: https://www.youtube.com/watch?v=sfMNI0yLZII ==> Time 9:5 min

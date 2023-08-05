@@ -1,0 +1,13 @@
+- data --> inform>>ation ====> encoding.
+- sender can be a receiver & receiver can be a sender.
+- https://www.youtube.com/watch?v=EmK1qF24_Bk
+- sender ---> decoding ---> receiver.
+- In computers, encoding is the process of putting a sequence of characters (letters, numbers, punctuation, and certain symbols) into a specialized format for efficient transmission or storage. Decoding is the opposite process -- the conversion of an encoded format back into the original sequence of characters.
+- sender --> encode
+- recevier --> decoding
+- yadi maile kasailai bujaudai chu vane maile encoding gariraxu.
+- vane yadi kasaile maile bujako kura bujna khojiraxa vane usle decoing gariraxa.
+
+
+- encoder ==> bujauna khojne
+- decoder ==> bujna khojne

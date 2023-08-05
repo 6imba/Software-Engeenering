@@ -1,0 +1,8 @@
+File system:
+* We see image we are looking for inside our computer hard disk using user interface provided by file system module provided by os(operating system).
+* 
+
+
+
+
+https://www.youtube.com/watch?v=mzUyMy7Ihk0

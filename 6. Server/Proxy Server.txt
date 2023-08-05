@@ -1,0 +1,3 @@
+- Proxy Server acts as a gateway|bridge(firewall) between client(user) and server(internet).
+
+- List of proxy server.

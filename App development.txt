@@ -1,0 +1,3 @@
+java, kotlin, are the programming language for android app development 
+swiff are the programming language for ios app development
+react native(js):fb|insta, xamarin(c#), flutter(dat, c#, java) are the programming language for ios/android app development 

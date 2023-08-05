@@ -1,0 +1,18 @@
+Question:
+
+    - JWT is a token based stateless authentication mechanism.
+
+    - Authentication Types:
+        Password-based authentication.
+        Multi-factor authentication.
+        Certificate-based authentication.
+        Biometric authentication.
+        Token-based authentication.
+        Session-based authentication.
+        OAUTH
+        Adaptive Authentication.
+        Two-factor authentication (2FA)
+        one-time pins,
+
+    - Swagger tools
+--------------------------------------------------------------------------------

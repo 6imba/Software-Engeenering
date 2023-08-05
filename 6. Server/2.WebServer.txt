@@ -1,0 +1,21 @@
+Web Server: computer system with web server software connected to internet. (Apache HTTP, IIS)
+
+
+Type of Web Server based on number of website it host:
+1. share host ==> {host website for multiple users}, {small personnel website with no huge traffic}
+2. dedicated host ==> {host website for single users/company}, {huge website with huge traffic}, {custome server modification}
+
+
+Reference:
+https://www.youtube.com/watch?v=thJSev60yfg&t=111s
+
+
+
+
+***********************************************************************************
+Apache OR Nginx? ==> Production Level Web Servers
+Django development server(python manage.py runserver) or Node server ==> Development Level
+port, traffic ~ crash ~ scale, serve static files, deliver with security.
+
+
+

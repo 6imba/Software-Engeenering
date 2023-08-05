@@ -1,0 +1,46 @@
+- every user is an admin then, it will create chaos in system.
+- so maitain strict rules and permission in system for user.
+
+- User
+- Role, Authentication
+- Access Control, Permission, Authorization,
+
+- user - authenticated role - based authoriaztion
+
+* User:
+    - authenticate
+
+* Role:
+    - admin
+    - manager
+    - staff
+    - member
+    - client
+
+* Permission:
+    - CRUD Post
+    - CRUD users
+    - crud role
+    - make order
+
+
+# User -> #Login -> #user authentication -> #activate one or more roles for authenticated user -> # access users authorized permission
+
+# Advantages:
+    - policies/permission is based with roles, not users. (system doest get effected even if certain user is removed.)
+    - when new user is added then any of the present role is assign to that new user. (as sson as role is assigned to a user, they will autonatically get acces to the corresponding permission)
+    - particaular user with particular role can access-particular-endpoints or make-particular-API-call.
+    - 
+
+# many ways to haldle authorization:
+    - tokens
+    - using middleware in each API endpoint.(endpoint which require authorization in order to access it)
+        - router.get("dashboard", adminAuthenticateMiddleware, callback)
+        - roleAuthenticateMiddleware will check if the anonymous/user making this particular endpoint request statisfies the authenticate role.
+        - and based on that authenticated role allow authorized permission.
+
+# C
+    - 
+
+
+- dotenv ==> allow us to use .env file which is used to keep our secret token for jwt.

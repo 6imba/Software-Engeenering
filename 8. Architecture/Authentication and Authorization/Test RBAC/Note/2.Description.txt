@@ -1,0 +1,194 @@
+# .env file and PORT number:
+    - npm i dotenv
+    - touch .env
+    - In .env: PORT = 3000
+    - In app.js: const PORT = process.env.PORT || 3000
+
+# HTTP error handler:
+    - const createHTTPerror = require("http-errors")
+    - app.use((req, res, next) => {
+          next(createHTTPerror.NotFound());
+      })
+    - app.use((error, req, res, next) => {
+          error.status = error.status || 500;
+          res.status(error.status || 500);
+          res.send(error);
+      })
+      OR
+    - In app.js
+        - app.use((error, req, res, next) => {
+          error.status = error.status || 500;
+          res.render('error_404', {error})
+        })
+        - <%- include('./partials_layout/header') %>
+            <h1>We're lost in space.</h1>
+            <br>
+            <h3> <%= error.status %> | <%= error.message %>  </h3>
+            <br>
+            <a href="/">Back to home.</a>
+          <%- include('./partials_layout/footer') %>
+
+
+# morgan(logging middleware):
+    - const morgan = require("morgan")
+    - app.use(morgan('dev'));
+
+# connect to MongoDB:
+    - const mongoose = require("mongoose")
+    - mongoose.connect(process.env.MONGO_URI, {
+        dbName: process.env.DB_NAME,
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+      })
+    // Since mongoose.connect() returns promise we can use .then and .catch
+    - mongoose.connect(process.env.MONGO_URI, {
+          dbName: process.env.DB_NAME,
+          useNewUrlParser: true,
+          useUnifiedTopology: true
+      }).then(()=> {
+          console.log("📊 MongoDB connection established !")
+          })
+      .catch((error) => console.log(error.message))
+    // Since we make connection to MongoDB before we listen to server request.
+    - mongoose.connect(process.env.MONGO_URI, {
+          dbName: process.env.DB_NAME,
+          useNewUrlParser: true,
+          useUnifiedTopology: true
+      }).then(()=> {
+          console.log("📊 MongoDB connection established !")
+          app.listen(PORT, () => console.log(`🚀 Run Express Application Server on PORT:${PORT}`))
+          })
+      .catch((error) => console.log(error.message))
+
+# Set view engine:
+    - app.set('view-engine', 'ejs')
+
+# Configure public folder:
+    - app.set('view-engine', 'ejs')
+
+# Model setup:
+    - In ./models/user.models.js
+        - const mongoose = require('mongoose')
+        // Blueprint of Mongoose Schema:
+        const UserSChema =new mongoose.Schema({
+            'email': {
+                type: String,
+                required: true,
+                lowercase: true,
+                unique: true
+            },
+            'password': {
+                type: String,
+                required: true
+            }
+        })
+        // Model Class using Mongoose Schema:
+        const User = mongoose.model('user', UserSChema)
+        // Export User model:
+        module.exports = User
+
+# Bycrypt module to hash password:
+    - npm i bcrypt
+    - In user.model.js:
+        - const bcrypt = require("bcrypt");
+        - UserSChema.pre('save', async function(next){
+            try {
+                if(this.isNew){
+                    const salt = await bcrypt.genSalt(10)
+                    const hashedPassword = await bcrypt.hash(this.password, salt)
+                    this.password = hashedPassword;
+                }
+                next()
+            } catch (error) {
+                next(error)
+            }
+        })
+
+# Display flash messages: //req.flash() requires sessions:
+    # In app.js
+    - const session = require('express-session')
+    - const connectFlash = require('connect-flash')
+    - // Init session
+        app.use(session({
+            secret: process.env.SESSION_SECRET,
+            resave: false,
+            saveUninitialized: false,
+        }))
+        app.use(connectFlash());
+    # In auth.routh.js
+    - router.get("/register", async (req, res) => {
+        req.flash('error', 'some error')
+        req.flash('key', 'some value')
+        const messages = req.flash()
+        console.log(messages)
+        res.render("register")
+      })
+      // inconsole: { error: [ 'some error1', 'some error2' ], key: [ 'some value' ] }
+      // flash msg only display once. one time use
+
+     - router.get("/register", async (req, res) => {
+        req.flash('error', 'some error1')
+        req.flash('error', 'some error2')
+        req.flash('info', 'some info1')
+        req.flash('info', 'some info2')
+        req.flash('key', 'some value')
+        const messages = req.flash()
+        console.log(messages)
+        res.render("register", {messages})
+      })
+     - <%- include('./navbar') %>
+       <%- include('./flash-messages') %>
+
+     - <% if(locals.messages){
+            Object.keys(messages).forEach((key) => {
+                messages[key].forEach((message) => { %>
+                    <p> <%= message %> </p>
+                <% })
+            })
+        } %>
+----------------------------------------------------------------------------------------------------------------
+
+Status code: 304 404
+MongoParseError: options usecreateindex, usefindandmodify are not supported.
+ejsesc
+handle navbar on the basis of authentication status
+async await + try catch
+
+----------------------------------------------------------------------------------------------------------------
+# Skeleton of application:
+    const express = require("express")
+    const createHTTPerror = require("http-errors")
+    const morgan = require("morgan")
+    const mongoose = require("mongoose")
+    require("dotenv").config()
+
+    const app = express()
+
+    app.use(morgan('dev'));
+
+    app.use("/", require('./routes/index.route.js'));
+    app.use("/auth", require('./routes/auth.route.js'));
+    app.use("/user", require('./routes/user.route.js'));
+
+    app.use((req, res, next) => {
+        next(createHTTPerror.NotFound());
+    })
+
+    app.use((error, req, res, next) => {
+        error.status= error.status || 500;
+        res.status(error.status);
+        res.send(error);
+    })
+
+    const PORT = process.env.PORT || 3000
+
+    mongoose.connect(process.env.MONGO_URI, {
+        dbName: process.env.DB_NAME,
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+    }).then(()=> {
+        console.log("📊 MongoDB connection established !")
+        app.listen(PORT, () => console.log(`🚀 Run Express Application Server on PORT:${PORT}`))
+        })
+    .catch((error) => console.log(error.message))
+----------------------------------------------------------------------------------------------------------------

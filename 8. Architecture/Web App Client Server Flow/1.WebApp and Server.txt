@@ -1,0 +1,58 @@
+- Web server can host multiple application.
+- Web application can be access using web browser.
+- Web browser is an application used for browsing internet.
+
+- Browsing is the process of reading something with the desire.
+- While surfing is process of studying something without any explicit target.
+
+=> Web client: web browser, cURL, Telnet.
+    => Protocol(HTTP/HTTPS/FTP/WebSocket) 
+        => Web Server host static|dynamic resources(HTML, PDF, JSON, JS etc)
+
+- URL: protocol + domain of web server + path of resource.
+
+- HTTP: request response protocol
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+- Standalone application: need to installed in a os system, no need internet, no browser needed, source code is present in native system.
+- Web application: no need to installed, need internet, browser needed, stored and host in web server + DB, source code is present in web server.
+- Web Site: static,informal
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+- Web application is built using client-side-scripting-language and server-side-scripting-language.
+    - client side scripting language: html, css, js,
+    - server side scripting language: node.js, python, php, asp.net
+
+- Library, framework base on various language are used to make web application these days.
+
+- Examples of web application: Facebook, Gmail, Netflix, Youtube, Instagram etc.
+
+- Client browser -> request-response-cycle -> Web server -> Application server -> Database.
+
+- Web application: dynamic, two way communication(get|post|put|patch|delete|so on...), 
+- Web Site: static web pages, informal, one way communication(get), 
+- All Web application are Web Site but all Web Site are not Web application.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+- Web server and Application server.
+- Web Site collection of web pages.
+- Web server is computer system that hosts web sites.
+- Web server is hosts web sites using web hosting software like Apache HTTP, Microsoft IIS, Lightpd, Sun Java System, Jigsaw etc.
+- Web server should be connected to internet in order to act as web server. Otherwise web client cannot access it using internet.
+- Web server host multiple websites and some many host few.
+
+- Catagories of web server on the basis of number website it host:
+    - Shared host (less traffic websites)
+    - Dedicated host (huge traffic websites)
+
+https://www.youtube.com/watch?v=thJSev60yfg
+https://www.youtube.com/watch?v=hJHvdBlSxug
+https://www.youtube.com/watch?v=sDlCSIDwpDs
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+- Application server is especially design to run application. (include both hardware and software).
+- 

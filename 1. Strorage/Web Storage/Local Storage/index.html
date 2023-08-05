@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Storage</title>
+</head>
+<body>
+    <h1>Local Storage</h1>
+
+    <script>
+        console.log("Local Storage")
+        const detial = {user: "Smith", role: "customer"}
+        // Store
+        localStorage.setItem('userdetial', JSON.stringify(detial));
+        // localStorage.lname = "Son";
+        // localStorage.setItem("testkey", "test-value");
+        // // Retrive
+        // console.log(localStorage.getItem("fname"));
+        // console.log(localStorage.lname);
+        // console.log(localStorage.testkey);
+        // // Remove
+        // localStorage.removeItem("testkey");
+        // console.log(localStorage.testkey); // undefined or null
+        // //Update
+        // localStorage.setItem("fname", "Amir");
+        // console.log(localStorage.getItem("fname"));
+
+        // console.log("Session Storage")
+        // sessionStorage.setItem("fname", "Amir");
+        // console.log(sessionStorage.getItem("fname"));
+
+        // console.log("Cookies")
+        // document.cookie = 'vegetable=Potato; expires='+ new Date(2022, 2, 3).toUTCString()
+        // console.log(document.cookie);
+        // console.log(document.cookie.vegetable);
+
+    </script>
+</body>
+</html>
+
+<!-- The sessionStorage object is equal to the localStorage object, except that it stores the data for only one session. The data is deleted when the user closes the specific browser tab. -->
+

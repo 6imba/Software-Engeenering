@@ -1,0 +1,24 @@
+# Session based auth: 
+    -> email&password(credential)
+    -> compare_credential_to_DB(server)
+    -> generate_session_id
+    -> save_session_id_on_server_side(db/redis/server_memory)
+    -> response_session_id
+    -> save_session_id_on_browser_cookie
+    -> send_cookie_data(session_id)_along_every_subsequent_http_req
+    -> validate_cookie_session by comparing request_cookie_session_id_to_server_session_id
+    -> if cookie_session_id is validate, thus user is authenticated.
+
+# JWT based auth: 
+    -> email&password(credential)
+    -> compare_credential_to_DB(server)
+    -> generate_jwt_assigning_with_secret_key(private key string store in server).
+    -> response_generated_jwt
+    -> save_generated_jwt_on_browser_cookie
+    -> send_cookie_data(jwt)_along_every_subsequent_http_req
+    -> verify_cookie_jwt_to_server_jwt_secret_key
+    -> if cookie_jwt is validate, thus user is authenticated.
+
+# Implement refresh tokens so that user doesn't have to sign in again and again every short time period after access_token get expired.(here access_token means jwt generated before.)
+    -> refresh tokens is used to generate new access tokens without having user to login again or simple without re-authenticating user.
+    -> 

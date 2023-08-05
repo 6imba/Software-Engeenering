@@ -1,0 +1,51 @@
+- Authentication is the process of verifying the identity of the users that request access to a system, network, or device.
+- Authoriztion in other hand is the process of verifying permissions of particular authenticated user.
+
+- Authentication: verifying the identity
+- Authoriztion: verifying permissions
+
+- Authentication and Authorization determines HTTP response status code.
+    - Authentication(401 Unauthorized)
+    - Authorization(403 Forbidden)
+---------------------------------------------------------------------------------------------------------
+
+# Authentication:
+    - Example:
+        * Entering a username and password when you log in to a website.
+        * Finger print to unlock modile.
+
+    - There exist main 3 process|method of Authentication.
+        1. Password-based authentication. (most common methods) ==> something you know
+        2. Token-based authentication. (such as bank card, jwt) ==> something you have
+        3. Biometric authentication. (such as fingerprints, voice recognition) ==> something you are
+---------------------------------------------------------------------------------------------------------
+
+- Authorization (authZ) is the next step after authentication.
+- You cannot be authorized to perform a function, have privileges assigned, or perform tasks in a given role, without first being authenticated.
+- Authorization = privileges (what you are allowed to do) + Authentication
+- Authorization can be defined as the right to perform a function based on your authentication.
+
+# Authoriztion:
+    - Common Authorization Methods:
+        - Role-based access controls (RBAC)
+        - Attribute-based access control (ABAC)
+
+# While authentication and authorization are often used interchangeably, they are separate processes used to protect an organization from cyber-attacks. As data breaches continue to escalate in both frequency and scope, authentication and authorization are the first line of defense to prevent confidential data from falling into the wrong hands. As a result, strong authentication and authorization methods should be a critical part of every organization’s overall security strategy.
+
+Q. Authentication vs. Authorization
+    - So, what is the difference between authentication and authorization? Simply put, authentication is the process of verifying who someone is, whereas authorization is the proces
+
+# A Strong Authentication & Authorization Strategy Is Essential.
+
+*********************************************************************************************************************************************************************************
+
+- Stateful Authentication(session using a cookie)
+- Stateless Authentication(token using JWT/OAuth/other)
+- https://www.youtube.com/watch?v=2PPSXonhIck
+- https://www.sailpoint.com/identity-library/difference-between-authentication-and-authorization/#:~:text=Simply%20put%2C%20authentication%20is%20the,a%20user%20has%20access%20to.&text=Authentication%20is%20used%20to%20verify,they%20represent%20themselves%20to%20be.
+
+============================================================================================================================================================
+
+
+
+

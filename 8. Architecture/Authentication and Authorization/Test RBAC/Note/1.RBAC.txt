@@ -1,0 +1,29 @@
+- npm init -y
+- npm i express ejs dotenv morgan mongoose http-erros express-session connect-flash
+- npm i --save-dev nodemon
+- touch app.js
+- mkdir views, public, models, routes
+- touch nodemon.json
+- touch .env
+
+- routes: index.route.js, user.route.js, auth.route.js
+    - index.route.js ==> route for static web pages
+    - auth.route.js ==> route for authenticattion
+    - user.route.js ==> route for authorization
+
+-------------------------------------------------------------------------------------------------
+# Dependencies:
+    - express: app framework
+    - ejs: templating engine
+    - dotenv: environment variables
+    - morgan: logging middleware
+    - mongoose: ORM for Express and MongoDB
+    - http-errors: handle http error response that we get in our application
+    - nodemon
+    -
+
+# Folders:
+    - routes: keeps routers .js modules
+    - views: keeps ejs templates
+    - public:
+    - models: keeps Mongoose Schema of Model Class (blueprint of user object)

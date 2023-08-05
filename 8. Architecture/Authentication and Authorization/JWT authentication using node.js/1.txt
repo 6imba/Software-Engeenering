@@ -1,0 +1,13 @@
+# 1st part: JWT authentication:
+    - create token in server-side,
+    - send token to client-side,
+    - authenticate those token on server-side on every http request.
+
+# 2nd part: Use Refresh token:
+    - automatically refresh our jwt tokens(to increase the security of our server)
+    - revoke the priviliages from user, that no longer want to access the server( similar to how logout function works)
+
+# npm i express nodemon jsonwentoken dotenv
+
+
+https://medium.com/@sureshdsk/how-json-web-token-jwt-authentication-works-585c4f076033

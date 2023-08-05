@@ -1,0 +1,44 @@
+#1. SDLC: SDLC is the process or a specific set of procedures, steps, and documents that carry a project through its technical development.
+    - SDLC is a methodology used to develop, maintain, and replace information systems.
+    - SDLC defines the software development process.
+    - SDLC is used by the software industry to design, develop and test high quality software.
+    - SDLC aims to produce the quality software that meets or exceeds customer expectations, reaches completion within time and budget.
+    - Software Development Process.
+
+#2. Phases/Stages of Software Development Life Cycle are:
+    Phase 1: Feasibility study(SRS/Pricing)         ==> “What are the current problems?”
+    Phase 2: Requirement collection and analysis    ==> “What do we want?”
+    Phase 3: Design(DFD/UIUX/ERD/Database)          ==> “How will we get what we want?”
+    Phase 4: Coding(Implementation/Building)        ==> “Let’s create what we want.”
+    Phase 5: Testing(Unit/Integration/etcTesting)   ==> “Did we get what we want?”
+    Phase 6: Installation/Deployment                ==> “Let’s start using what we got.”
+    Phase 7: Maintenance(Technical-Support)         ==> “Let’s get this closer to what we want.”
+
+#3. SDLC-Methodology || System-Development-Model:
+    - Some of the most important models/methodology for the conceptual implementation of SDLC:
+        1. Waterfall Model
+        2. Agile Model
+        3. Prototype Model
+        4. Iterative Model
+        5. Spiral Model
+        6. V-Shaped Model
+        7. Big Bang Model
+        8. RAD
+        9. RAD and PM
+        10. Incremental Model
+        11. Evaluationary Model
+
+#4. SDLC-Methodology || System-Development-Model && their framework:
+    - Software-Development-Model ==> Framework
+        1. Agile Model           ==> Scrum, Kanban, XP
+
+# SDLC
+# SDLC Methodology/System Development Model
+# SDLC Methodology Framework.
+
+# Customer & Service Provider.
+# 
+
+# Reference:
+    - https://www.guru99.com/software-development-life-cycle-tutorial.html#2
+

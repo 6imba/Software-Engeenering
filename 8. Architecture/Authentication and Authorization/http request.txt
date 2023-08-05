@@ -1,0 +1,16 @@
+# http-header:
+    - meta data about http request
+    - its just a key-value pair
+    - {
+        "User-Agent": ""cUL/1.2.3",
+        "Accept": "*/*",
+        "Host": "localhost:3000",
+        "Cookie": "session=12345",
+      }
+
+# body:
+    - where actual info/data is sent/received.
+    - when we make get request to a webpage, response html page code is on body.
+    - when we make get request to a api/data, response data is on body.
+    - when we send data to server from browser html form via post/patch method,request data is on body.
+

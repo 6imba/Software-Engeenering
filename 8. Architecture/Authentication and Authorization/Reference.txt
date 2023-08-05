@@ -1,0 +1,9 @@
+# session based vs token based auth ==> https://www.youtube.com/watch?v=soGRyl9ztjI
+# JWT ==> https://www.youtube.com/watch?v=_XbXkVdoG_0
+# Where to store JWT on browser? ==> https://stackoverflow.com/questions/27067251/where-to-store-jwt-in-browser-how-to-protect-against-csrf
+# Session vs JWT vs Refresh token ==> https://www.youtube.com/watch?v=hoBSjmrwF1k
+
+
+https://www.youtube.com/watch?v=U6OcC0yq1CE
+https://www.youtube.com/watch?v=j8Yxff6L_po
+https://www.youtube.com/watch?v=2PPSXonhIck&t=458s

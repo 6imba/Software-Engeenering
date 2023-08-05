@@ -1,0 +1,37 @@
+extension:
+	.txt
+	.pdf
+	.exe
+	.ibd
+	.bat
+	.ttf
+	.otf
+	.woff
+	.woff2
+	.js
+	.mjs
+	.py
+	.php
+	.cs
+	.css
+	.html
+	.json
+	.xlsx
+	.ppt
+	.docx
+	.csv
+	.rar
+	.zip	
+	.ignore
+	.git
+	.log
+	.dll
+	.mp3
+	.mp4
+	.mp4a
+	.obj
+	.o
+	.msi
+	.iso
+	
+Common window system file extensions include . DLL, . DRV, . SYS, and . CAB.

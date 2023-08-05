@@ -1,0 +1,10 @@
+<script>
+    console.log(localStorage) ==> Storage {length: 0}
+    console.log(typeof(localStorage)) ==> object
+</script>
+
+
+
+
+------------------------------------
+[[Prototype]]

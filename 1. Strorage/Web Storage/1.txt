@@ -1,0 +1,38 @@
+- Web Storage API provides two different objects for storing data on the users' browsers: sessionStorage and localStorage.
+- But there three main ways to store data inside of a browser: Local Storage, Session Storage & Cookiees.
+- All these are store in client browser.
+- Storage in one browser not accessible in another browser in same computer.
+    - Storage in chrome is not accessible firefox storage.
+    - Means broswer indepenedent.
+
+- User donot share these three strorage data between them.
+    - means if you set these three strorage data for a certain user, none of the other user at that site can access it, as its stored in user computer only.
+    - doesnt matter even if the info in these storage is lost.
+
+- Cookiees is totally different and older than Local Storage & Session Storage.
+- Cookiees & Local Storage are avialable in any tab of same browser but Session Storage is avialable in same tab only.
+- Thats why Session Storage(has-expire-time) used for one broswering session, as session storage gets lost as soon as browser tab is closed.
+- When as Cookiees(has-expire-time) & Local Storage(no-expire-time) is avialable forever until you delete them manually or by coding.
+- Cookiee while they are stored in browser, they are send along with http request to the server per every http request.
+- That why makes cookies of small size, so that it doesnt slow down the request time.
+- Thats whats make cookie really useful when it comes to user authentication.
+
+- Local Storage: when you need to large store data in browser only, access store data in all the broswer tabs and expires manually.
+- Session Storage: when you need to store data in browser only, access store data in a single broswer tabs and has expiring period.
+- Cookies: Send stored data to server along with HTTP request header in every http request. When you need to store data in browser as well as server, access store data in all the broswer tabs and has expiring period.
+
+
+
+
+- Local storage allows developers to store and retrieve data in the browser. The data stored in local storage will not expire. 
+  This means the data will persist even if the tab or the browser window is closed.
+
+- Session storage is a popular choice when it comes to storing data on a browser. It enables developers to save and retrieve different values.
+  Unlike local storage, session storage only keeps data for a particular session. The data is cleared once the user closes the browser window.
+
+- Cookies: As a necessary part of web browsing, HTTP cookies help web developers give you more personal, convenient website visits.
+  Cookies let websites remember you, your website logins, shopping carts and more.
+
+- Server-side sessions are mostly used on larger web applications, requiring lots of user data to be stored. However, client-based sessions are 
+  most commonly used in smaller applications because of their ease of use and smaller data size.
+

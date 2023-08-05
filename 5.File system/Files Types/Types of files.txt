@@ -1,0 +1,22 @@
+- Generally there are two types of files.(ASCII and Binary)
+
+- file extension is the way for the operating system to know what program/software to use to run/read the selected file.
+	- like if file is .html open it in web_browser.
+	- if file is .png open it in photo_viewer.
+	- if file is .py open it in IDE.
+
+
+
+- Computer_Program ---> High Level Language(SourceCode) ---> TextEditor/IDE ---> SourceCodeFile(code_file.py/.c/.cs/...) ---> Compilation --->  Machine Level Binary Language(MachineCode) ---> ObjectFile ---> ExecutableFile.exe
+- Compilation process is different for different language.
+
+
+
+- Machine Level Binary Language
+- Byte Code
+- Assembly Language
+- High Level Language
+
+
+
+- 

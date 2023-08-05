@@ -1,0 +1,3 @@
+- Stores data in broswer in key-value form.
+- localStorage is the property of windo object. => window.localStorage
+- 

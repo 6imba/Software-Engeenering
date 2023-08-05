@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+</head>
+<body>
+    <form action="/post" method="POST">
+        <input type="text"/ name="naam" id="naamId">
+        <button type="submit" onclick="return submitForm()"> Button </button>
+        <p id="name_err" >Message</p>
+    </form>
+
+    <script>
+        function submitForm() {
+            const username = document.getElementById("naamId").value;
+            if(!username.match(/[^a-zA-Z0-9]/)){
+                document.getElementById("name_err").innerHTML = "Invalid UserName";
+                return false;
+            }else{
+                // document.getElementById("name_err").innerHTML = "Successfully UserName added!";
+                alert("Valid Username")
+                // return true;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+# archive: a collection of related documents or records .
+
+# archive file: a file that is composed of more than one file.
+	- file that is created compressing a folder that contains more than one file.
+
+- In computing, an archive file is a computer file that is composed of one or more files along with metadata.
+- Archive files are used to collect multiple data files together into a single file for easier portability and storage, or simply to compress files to use less storage space.
+- archive files are used for packaging software_files for distribution, as software content are naturally spread across seperate different files.
+- So archive is known as package.
+
+# package formate.
+	- A JAR is a package file format typically used to aggregate many Java class files and associated metadata and resources into one file for distribution.
+	- Likewise;
+	- .apk for andriod.
+	- .zip, .rar, .jar, .apk, (Archiving and compression)
+	- .iso (Archiving only)
+	- 
+
+# Terms like archive, archive file, and file archive are also used to describe the act or result of compressing and storing a collection of files and folders to a single file.
+
