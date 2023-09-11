@@ -35,6 +35,7 @@
     - Application Architecture
     - Multitier architecture
     - Microkernel Pattern
+    - Monorepo
 
 # Microservices Architecture(based on the principle of building a software system): This pattern decomposes the system into small, independent services that can be developed, deployed, and scaled independently. It promotes flexibility, scalability, and allows for easier maintenance of complex systems.
 
@@ -83,4 +84,3 @@ Description: Event sourcing captures all changes to the system's state as a sequ
 These are just a few examples of different software architectures based on different factors or criteria. The choice of architecture depends on the specific requirements, constraints, and goals of the system being developed. Architects consider these factors to select the most suitable architecture that meets the system's needs.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
-
